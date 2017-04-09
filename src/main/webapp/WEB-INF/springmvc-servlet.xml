@@ -21,7 +21,7 @@
 
 
 	<mvc:annotation-driven />
-	<context:component-scan base-package="store.antnest*" />
+	<context:component-scan base-package="store.antnest.controller" />
 	<!-- Freemarker配置 -->
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
