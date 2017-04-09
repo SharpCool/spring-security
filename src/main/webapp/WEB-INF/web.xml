@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<j2ee:java-wsdl-mapping version="1.1" xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/j2ee_jaxrpc_mapping_1_1.xsd ">
-  <j2ee:package-mapping>
-    <j2ee:package-type>token</j2ee:package-type>
-    <j2ee:namespaceURI>http://tempuri.org</j2ee:namespaceURI>
-  </j2ee:package-mapping>
-</j2ee:java-wsdl-mapping>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2eehttp://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+
+
+	<!-- Spring 上下文参数 -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>/WEB-INF/applicationContext*.xml</param-value>
+	</context-param>
+
+	<!-- Spring 容器启动器 -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener
+		</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<!--为DispatcherServlet建树映射 -->
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/*.html</url-pattern>
+	</servlet-mapping>
+</web-app>
