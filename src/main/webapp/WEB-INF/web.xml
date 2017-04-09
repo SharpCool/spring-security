@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<j2ee:java-wsdl-mapping version="1.1" xmlns:j2ee="http://java.sun.com/xml/ns/j2ee" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/j2ee_jaxrpc_mapping_1_1.xsd ">
+  <j2ee:package-mapping>
+    <j2ee:package-type>token</j2ee:package-type>
+    <j2ee:namespaceURI>http://tempuri.org</j2ee:namespaceURI>
+  </j2ee:package-mapping>
+</j2ee:java-wsdl-mapping>
