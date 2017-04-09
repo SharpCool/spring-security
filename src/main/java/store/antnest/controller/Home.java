@@ -13,7 +13,7 @@ public class Home {
 	@RequestMapping("index")
 	public ModelAndView index(HttpServletRequest req,HttpServletResponse res){
 		System.out.println("===========");
-		return new ModelAndView("home");
+		return new ModelAndView("index");
 	}
 
 }
