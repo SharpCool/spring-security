@@ -24,7 +24,7 @@
 			<artifactId>freemarker</artifactId>
 			<version>2.3.10</version>
 		</dependency>
-		
+
 		<!-- jsp servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -38,5 +38,29 @@
 			<version>2.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- Logger -->
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>org.logback-extensions</groupId>
+			<artifactId>logback-ext-spring</artifactId>
+			<version>0.1.4</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.codehaus.janino/com.springsource.org.codehaus.janino -->
+		<dependency>
+			<groupId>org.codehaus.janino</groupId>
+			<artifactId>com.springsource.org.codehaus.janino</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+
 	</dependencies>
 </project>

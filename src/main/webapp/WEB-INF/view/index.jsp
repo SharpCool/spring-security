@@ -8,5 +8,10 @@
 </head>
 <body>
 	Insert title here
+	<form action="/user/login.html">
+		<input name="userName" type="text"/>
+		<input name="passWord" type="password"/>
+		<input type="submit"/>
+	</form>
 </body>
 </html>
